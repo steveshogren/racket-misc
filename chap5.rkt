@@ -39,4 +39,3 @@
     [(cons? fds) (cond
                    [(symbol=? n (fdC-name (first fds))) (first fds)]
                    [else (get-fundef n (rest fds))])]))
-(test (subst (numC 10) 'x (plusC (idC 'w) (multC (idC 'z) (idC 'y)))) 5)
